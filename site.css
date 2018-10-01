@@ -1,0 +1,19 @@
+img {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 10em;
+}
+
+.flipped {
+    transform: rotateY(180deg) translate(50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+    img { transform: translate(-50%, -50%) scale(1.5); }
+    .flipped { transform: rotateY(180deg) translate(50%, -50%) scale(1.5); }
+}
+
+@media screen and (min-width: 1024px) {
+    img { transform: translate(-50%, -50%) scale(2); }
+    .flipped { transform: rotateY(180deg) translate(50%, -50%) scale(2); }
+}
